@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                             http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+
+    <!-- Welcome File Configuration -->
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+
+    <!-- Servlet configuration for SignInServlet -->
+    <servlet>
+        <servlet-name>SignInServlet</servlet-name>
+        <servlet-class>com.bloom.SignInServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SignInServlet</servlet-name>
+        <url-pattern>/signin</url-pattern>
+    </servlet-mapping>
+
+    <!-- Servlet configuration for SignUpServlet -->
+    <servlet>
+        <servlet-name>SignUpServlet</servlet-name>
+        <servlet-class>com.bloom.SignUpServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SignUpServlet</servlet-name>
+        <url-pattern>/signup</url-pattern>
+    </servlet-mapping>
+
+    <!-- Servlet configuration for AdminServlet -->
+    <servlet>
+        <servlet-name>AdminServlet</servlet-name>
+        <servlet-class>com.bloom.AdminServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminServlet</servlet-name>
+        <url-pattern>/admin</url-pattern>
+    </servlet-mapping>
+     <servlet>
+        <servlet-name>DeliveryBoyServlet</servlet-name>
+        <servlet-class>com.bloom.DeliveryBoyServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeliveryBoyServlet</servlet-name>
+        <url-pattern>/deliveryboy</url-pattern>
+    </servlet-mapping>
+     <servlet>
+        <servlet-name>AdminVendorServlet</servlet-name>
+        <servlet-class>com.bloom.AdminVendorServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminVendorServlet</servlet-name>
+        <url-pattern>/vendor</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AdminItemServlet</servlet-name>
+        <servlet-class>com.bloom.AdminItemServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminItemServlet</servlet-name>
+        <url-pattern>/item</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ItemPriceServlet</servlet-name>
+        <servlet-class>com.bloom.ItemPriceServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ItemPriceServlet</servlet-name>
+        <url-pattern>/itempricedetails</url-pattern>
+    </servlet-mapping>
+      <servlet>
+        <servlet-name>CustomerServlet</servlet-name>
+        <servlet-class>com.bloom.CustomerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CustomerServlet</servlet-name>
+        <url-pattern>/customer</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>StockServlet</servlet-name>
+        <servlet-class>com.bloom.StockServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StockServlet</servlet-name>
+        <url-pattern>/stock</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>OrderServlet</servlet-name>
+        <servlet-class>com.bloom.OrderServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>OrderServlet</servlet-name>
+        <url-pattern>/order</url-pattern>
+    </servlet-mapping>
+      <servlet>
+        <servlet-name>BillingServlet</servlet-name>
+        <servlet-class>com.bloom.BillingServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BillingServlet</servlet-name>
+        <url-pattern>/billing</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ReportServlet</servlet-name>
+        <servlet-class>com.bloom.ReportServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReportServlet</servlet-name>
+        <url-pattern>/report</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+
+</web-app>
